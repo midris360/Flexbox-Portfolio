@@ -9,15 +9,24 @@
   </head>
 
   <body>
+
     <header>
-      <h1>Katzeem Portfolio</h1>
+      <div class="logo">Katzeem Portfolio</div>
+      <nav>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
 <main>
 
 <!-- Intro section  -->
-      <div class="wrapper">
-        <article id="top">
+      <section>
+        
           <div class="group">
             <div class="item">
               <img src="https://i.ibb.co/rGByNLq/IMGcropped.png" class="rounded" alt="Photo of me, Katzeem" />
@@ -29,16 +38,15 @@
               <p>Being able to do Thinkful's Engineering Flex cohort as really help push me to where I need to be professionally and even mentally because if I was to do self-study, I'd probably be procrastinating and getting distracted.</p>
             </div>
           </div>
-        </article>
-      </div>
+        
+      </section>
 
 <!-- Intro section -->
 
       
 
 <!-- About Me section -->
-      <article id="middle">
-        <div class="wrapper">
+      <section>
           <h2>About Me</h2>
         <div class="group">
             <div class="item">
@@ -61,33 +69,47 @@
               <img src="https://www.dawsons.co.uk/templates/dawsons.co.uk/_images/media/blog_content/musician_using_arturia_drumbrute.jpg" alt="hobbies2" class="rounded">
             </div>
         </div>
-        </div>
-      </article>
+      </section>
+      
 
 <!-- About Me section -->
 
 
 <!-- Contact section -->
-  <article id="contact">
+  <section>
     <h2>Contact</h2>
   <div class="group">
-
+   
     <div class="item">
       <p><a href="mailto:midris360@gmail.com" target="_blank">midris360@gmail.com</a></p>
       <p><a href="https://github.com/midris360" target="_blank">GitHub</a></p>
       <p><a href="https://www.linkedin.com/in/mohammedidris1201/" target="_blank">LinkedIn</a></p>
     </div>
+
+     <div class="item">
+      <form action="#" method="POST">
+          <label for="user-name">Name:</label>
+          <input id="user-name" type="text" name="name">
+
+          <label for="user-email">Email:</label>
+          <input id="user-email" type="text" name="email">
+
+          <label for="user-message">Message:</label>
+          <textarea id="user-message" name="message"></textarea>
+          <button type="submit">Submit</button>
+      </form>
+    </div>
+
   </div>
 
-  </article>
+  </section>
 
 <!-- Contact section -->
 
 <hr>
 
 <!-- Project section -->
-<div class="wrapper">
-      <article id="portfolio">
+<section>
       <h2>Portfolio</h2>
       <div class="group">
        
@@ -119,9 +141,8 @@
       </div>
 
     </div>
-  </article>
 
-</div>
+</section>
 <!-- Project section -->
 
 

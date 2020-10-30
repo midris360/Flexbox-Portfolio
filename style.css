@@ -1,3 +1,60 @@
+header, .logo {
+  display: block;
+  flex-direction: row;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 14px 20px 14px 20px;
+    padding-top: 10px;
+    font-size: 22px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+}
+
+
+
 /* Mobile First */
 .wrapper {
   width: 100%;
@@ -23,9 +80,8 @@
 /* Groups & Items for Desktop */
 
 @media all and (min-width: 800px) {
-  .wrapper {
-    width: 80%;
-    margin: auto
+  section {
+    padding: 0 10%;
   }
 
   .group {
@@ -55,13 +111,7 @@ img.rounded {
 
 
 /* --------------Header -----------*/
-header {
-  display: block;
-  margin-bottom: 40px;
-  text-align: center;
-  color: white;
-  background-color: black;
-}
+
 
 header h1 {
   margin: 0;
@@ -80,4 +130,25 @@ header h1 {
 #middle {
   background-color: rgb(230, 213, 193);
   padding: 20px 0 30px 0px;
+}
+
+
+
+/*-------Email form-------*/
+form {
+  padding-right: 7px;
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  height: 100px;
 }
